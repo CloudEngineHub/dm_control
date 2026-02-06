@@ -1995,6 +1995,9 @@
             <attribute name="name" type="identifier"/>
             <attribute name="class" type="reference" reference_namespace="default"/>
             <attribute name="group" type="int"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
             <attribute name="actdim" type="int"/>
             <attribute name="ctrllimited" type="keyword" valid_values="false true auto"/>
             <attribute name="forcelimited" type="keyword" valid_values="false true auto"/>
@@ -2028,6 +2031,9 @@
             <attribute name="name" type="identifier"/>
             <attribute name="class" type="reference" reference_namespace="default"/>
             <attribute name="group" type="int"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
             <attribute name="ctrllimited" type="keyword" valid_values="false true auto"/>
             <attribute name="forcelimited" type="keyword" valid_values="false true auto"/>
             <attribute name="ctrlrange" type="array" array_type="float" array_size="2"/>
@@ -2050,6 +2056,9 @@
             <attribute name="name" type="identifier"/>
             <attribute name="class" type="reference" reference_namespace="default"/>
             <attribute name="group" type="int"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
             <attribute name="ctrllimited" type="keyword" valid_values="false true auto"/>
             <attribute name="forcelimited" type="keyword" valid_values="false true auto"/>
             <attribute name="ctrlrange" type="array" array_type="float" array_size="2"/>
@@ -2077,6 +2086,9 @@
             <attribute name="name" type="identifier"/>
             <attribute name="class" type="reference" reference_namespace="default"/>
             <attribute name="group" type="int"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
             <attribute name="ctrllimited" type="keyword" valid_values="false true auto"/>
             <attribute name="forcelimited" type="keyword" valid_values="false true auto"/>
             <attribute name="ctrlrange" type="array" array_type="float" array_size="2"/>
@@ -2100,6 +2112,9 @@
             <attribute name="name" type="identifier"/>
             <attribute name="class" type="reference" reference_namespace="default"/>
             <attribute name="group" type="int"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
             <attribute name="ctrllimited" type="keyword" valid_values="false true auto"/>
             <attribute name="forcelimited" type="keyword" valid_values="false true auto"/>
             <attribute name="ctrlrange" type="array" array_type="float" array_size="2"/>
@@ -2127,6 +2142,9 @@
             <attribute name="name" type="identifier"/>
             <attribute name="class" type="reference" reference_namespace="default"/>
             <attribute name="group" type="int"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
             <attribute name="forcelimited" type="keyword" valid_values="false true auto"/>
             <attribute name="ctrlrange" type="array" array_type="float" array_size="2"/>
             <attribute name="forcerange" type="array" array_type="float" array_size="2"/>
@@ -2149,6 +2167,9 @@
             <attribute name="name" type="identifier"/>
             <attribute name="class" type="reference" reference_namespace="default"/>
             <attribute name="group" type="int"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
             <attribute name="ctrllimited" type="keyword" valid_values="false true auto"/>
             <attribute name="forcelimited" type="keyword" valid_values="false true auto"/>
             <attribute name="ctrlrange" type="array" array_type="float" array_size="2"/>
@@ -2175,6 +2196,9 @@
             <attribute name="name" type="identifier"/>
             <attribute name="class" type="reference" reference_namespace="default"/>
             <attribute name="group" type="int"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
             <attribute name="ctrllimited" type="keyword" valid_values="false true auto"/>
             <attribute name="forcelimited" type="keyword" valid_values="false true auto"/>
             <attribute name="ctrlrange" type="array" array_type="float" array_size="2"/>
@@ -2205,6 +2229,9 @@
             <attribute name="name" type="identifier"/>
             <attribute name="class" type="reference" reference_namespace="default"/>
             <attribute name="group" type="int"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
             <attribute name="forcelimited" type="keyword" valid_values="false true auto"/>
             <attribute name="ctrlrange" type="array" array_type="float" array_size="2"/>
             <attribute name="forcerange" type="array" array_type="float" array_size="2"/>
@@ -2220,6 +2247,9 @@
             <attribute name="plugin" type="string"/>
             <attribute name="instance" type="reference" reference_namespace="plugin"/>
             <attribute name="group" type="int"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
             <attribute name="ctrllimited" type="keyword" valid_values="false true auto"/>
             <attribute name="forcelimited" type="keyword" valid_values="false true auto"/>
             <attribute name="actlimited" type="keyword" valid_values="false true auto"/>
@@ -2259,6 +2289,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="site" type="reference" required="true"/>
           </attributes>
@@ -2268,6 +2302,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="site" type="reference" required="true"/>
           </attributes>
@@ -2277,6 +2315,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="site" type="reference" required="true"/>
           </attributes>
@@ -2286,6 +2328,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="site" type="reference" required="true"/>
           </attributes>
@@ -2295,6 +2341,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="site" type="reference" required="true"/>
           </attributes>
@@ -2304,6 +2354,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="site" type="reference" required="true"/>
           </attributes>
@@ -2313,6 +2367,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="site" type="reference" required="true"/>
           </attributes>
@@ -2322,6 +2380,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="site" type="reference"/>
             <attribute name="camera" type="reference"/>
@@ -2333,6 +2395,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="site" type="reference" required="true"/>
             <attribute name="camera" type="reference" required="true"/>
@@ -2343,6 +2409,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="joint" type="reference" required="true"/>
           </attributes>
@@ -2352,6 +2422,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="joint" type="reference" required="true"/>
           </attributes>
@@ -2361,6 +2435,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="tendon" type="reference" required="true"/>
           </attributes>
@@ -2370,6 +2448,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="tendon" type="reference" required="true"/>
           </attributes>
@@ -2379,6 +2461,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="actuator" type="reference" required="true"/>
           </attributes>
@@ -2388,6 +2474,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="actuator" type="reference" required="true"/>
           </attributes>
@@ -2397,6 +2487,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="actuator" type="reference" required="true"/>
           </attributes>
@@ -2406,6 +2500,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="joint" type="reference" required="true"/>
           </attributes>
@@ -2415,6 +2513,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="joint" type="reference" required="true"/>
           </attributes>
@@ -2424,6 +2526,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="joint" type="reference" required="true"/>
           </attributes>
@@ -2433,6 +2539,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="joint" type="reference" required="true"/>
           </attributes>
@@ -2442,6 +2552,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="joint" type="reference" required="true"/>
           </attributes>
@@ -2451,6 +2565,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="joint" type="reference" required="true"/>
           </attributes>
@@ -2460,6 +2578,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="tendon" type="reference" required="true"/>
           </attributes>
@@ -2469,6 +2591,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="tendon" type="reference" required="true"/>
           </attributes>
@@ -2478,6 +2604,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="tendon" type="reference" required="true"/>
           </attributes>
@@ -2487,6 +2617,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="objtype" type="keyword" required="true" valid_values="body xbody geom site camera"/>
             <attribute name="objname" type="reference" required="true" reference_namespace="attrib:objtype"/>
@@ -2499,6 +2633,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="objtype" type="keyword" required="true" valid_values="body xbody geom site camera"/>
             <attribute name="objname" type="reference" required="true" reference_namespace="attrib:objtype"/>
@@ -2511,6 +2649,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="objtype" type="keyword" required="true" valid_values="body xbody geom site camera"/>
             <attribute name="objname" type="reference" required="true" reference_namespace="attrib:objtype"/>
@@ -2523,6 +2665,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="objtype" type="keyword" required="true" valid_values="body xbody geom site camera"/>
             <attribute name="objname" type="reference" required="true" reference_namespace="attrib:objtype"/>
@@ -2535,6 +2681,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="objtype" type="keyword" required="true" valid_values="body xbody geom site camera"/>
             <attribute name="objname" type="reference" required="true" reference_namespace="attrib:objtype"/>
@@ -2547,6 +2697,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="objtype" type="keyword" required="true" valid_values="body xbody geom site camera"/>
             <attribute name="objname" type="reference" required="true" reference_namespace="attrib:objtype"/>
@@ -2559,6 +2713,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="objtype" type="keyword" required="true" valid_values="body xbody geom site camera"/>
             <attribute name="objname" type="reference" required="true" reference_namespace="attrib:objtype"/>
@@ -2571,6 +2729,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="objtype" type="keyword" required="true" valid_values="body xbody geom site camera"/>
             <attribute name="objname" type="reference" required="true" reference_namespace="attrib:objtype"/>
@@ -2581,6 +2743,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="objtype" type="keyword" required="true" valid_values="body xbody geom site camera"/>
             <attribute name="objname" type="reference" required="true" reference_namespace="attrib:objtype"/>
@@ -2591,6 +2757,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="body" type="reference" required="true"/>
           </attributes>
@@ -2600,6 +2770,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="body" type="reference" required="true"/>
           </attributes>
@@ -2609,6 +2783,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="body" type="reference" required="true"/>
           </attributes>
@@ -2618,6 +2796,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="site" type="reference" required="true"/>
             <attribute name="objtype" type="keyword" required="true" valid_values="body xbody geom site camera"/>
@@ -2664,6 +2846,10 @@
             <attribute name="noise" type="float"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="cutoff" type="float" required="true"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="geom1" type="reference" reference_namespace="geom"/>
             <attribute name="geom2" type="reference" reference_namespace="geom"/>
             <attribute name="body1" type="reference" reference_namespace="body"/>
@@ -2676,6 +2862,10 @@
             <attribute name="noise" type="float"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="cutoff" type="float" required="true"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="geom1" type="reference" reference_namespace="geom"/>
             <attribute name="geom2" type="reference" reference_namespace="geom"/>
             <attribute name="body1" type="reference" reference_namespace="body"/>
@@ -2688,6 +2878,10 @@
             <attribute name="noise" type="float"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="cutoff" type="float" required="true"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="geom1" type="reference" reference_namespace="geom"/>
             <attribute name="geom2" type="reference" reference_namespace="geom"/>
             <attribute name="body1" type="reference" reference_namespace="body"/>
@@ -2700,6 +2894,10 @@
             <attribute name="noise" type="float"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
           </attributes>
         </element>
         <element name="e_kinetic" repeated="true" namespace="sensor">
@@ -2708,6 +2906,10 @@
             <attribute name="noise" type="float"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
           </attributes>
         </element>
         <element name="clock" repeated="true" namespace="sensor">
@@ -2716,6 +2918,10 @@
             <attribute name="noise" type="float"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
           </attributes>
         </element>
         <element name="contact" repeated="true" namespace="sensor">
@@ -2723,6 +2929,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="num" type="int"/>
             <attribute name="data" type="string"/>
@@ -2749,6 +2959,10 @@
             <attribute name="name" type="identifier"/>
             <attribute name="noise" type="float"/>
             <attribute name="cutoff" type="float"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="interval" type="array" array_type="float" array_size="2"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="tendon" type="reference" required="true"/>
           </attributes>
