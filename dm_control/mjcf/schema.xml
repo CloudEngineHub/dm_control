@@ -1212,7 +1212,7 @@
             </element>
             <element name="edge" repeated="true">
               <attributes>
-                <attribute name="equality" type="string" valid_values="true false"/>
+                <attribute name="equality" type="string" valid_values="false true vert"/>
                 <attribute name="solref" type="array" array_type="float" array_size="2"/>
                 <attribute name="solimp" type="array" array_type="float" array_size="5"/>
                 <attribute name="stiffness" type="float"/>
@@ -1591,7 +1591,7 @@
                 </element>
                 <element name="edge" repeated="true">
                   <attributes>
-                    <attribute name="equality" type="string" valid_values="true false"/>
+                    <attribute name="equality" type="string" valid_values="false true vert"/>
                     <attribute name="solref" type="array" array_type="float" array_size="2"/>
                     <attribute name="solimp" type="array" array_type="float" array_size="5"/>
                     <attribute name="stiffness" type="float"/>
