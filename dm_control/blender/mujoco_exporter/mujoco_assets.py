@@ -102,7 +102,7 @@ def mesh_asset_builder(
   """Exports a mesh associated with the object and creates an 'asset' node."""
   mat_names = blender_scene.map_materials(lambda m: m.name, materials)
   twosidedness = blender_scene.map_materials(
-      lambda m: not m.use_backface_culling, materials
+      lambda m: not m.use_backface_culling, materials  # pyrefly: ignore[missing-attribute]
   )
   mat_names = mat_names or ['']
   twosidedness = twosidedness or [False]

@@ -123,7 +123,7 @@ class ObjectRef:
   @property
   def is_armature(self) -> bool:
     return (  # pytype: disable=bad-return-type
-        self.native_obj
+        self.native_obj  # pyrefly: ignore[bad-return]
         and self.native_obj.type == _ARMATURE
         and not self.native_bone
     )
@@ -171,7 +171,7 @@ class ObjectRef:
       """Derives a local matrix of an armature bone."""
       assert isinstance(bone, bpy.types.Bone)
       if bone.parent:
-        return bone.parent.matrix_local.inverted() @ bone.matrix_local
+        return bone.parent.matrix_local.inverted() @ bone.matrix_local  # pyrefly: ignore[missing-attribute]
       else:
         return bone.matrix_local
 
@@ -179,7 +179,7 @@ class ObjectRef:
       """Derives a local matrix of an object, such as a mesh or armature."""
       assert isinstance(obj, bpy.types.Object)
       if obj.parent:
-        local_mtx = obj.parent.matrix_world.inverted() @ obj.matrix_world
+        local_mtx = obj.parent.matrix_world.inverted() @ obj.matrix_world  # pyrefly: ignore[missing-attribute]
         if obj.parent_bone:
           assert obj.parent.type == _ARMATURE
           armature = obj.parent
@@ -191,9 +191,9 @@ class ObjectRef:
         return obj.matrix_world
 
     if self.is_bone:
-      local_mtx = get_bone_local_mtx(self.native_bone)
+      local_mtx = get_bone_local_mtx(self.native_bone)  # pyrefly: ignore[bad-argument-type]
     else:
-      local_mtx = get_object_local_mtx(self.native_obj)
+      local_mtx = get_object_local_mtx(self.native_obj)  # pyrefly: ignore[bad-argument-type]
 
     rot_quat = local_mtx.to_quaternion()
     pos = local_mtx.translation
@@ -373,8 +373,8 @@ def map_blender_tree(
   """Returns a list of scene objects in the breadth-first order."""
   # Collect all nodes to explore - objects and bones alike
   assert context.scene is not None
-  to_explore = [ObjectRef.new_object(o) for o in context.scene.objects]
-  armatures = [o for o in context.scene.objects if o.type == 'ARMATURE']
+  to_explore = [ObjectRef.new_object(o) for o in context.scene.objects]  # pyrefly: ignore[missing-attribute]
+  armatures = [o for o in context.scene.objects if o.type == 'ARMATURE']  # pyrefly: ignore[missing-attribute]
   for armature in armatures:
     for bone in armature.data.bones:
       to_explore.append(ObjectRef.new_bone(armature, bone))

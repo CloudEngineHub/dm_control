@@ -99,7 +99,7 @@ class types:
     def to_mesh(self):
       pass
 
-    def evaluated_get(self, _) -> types.Object:
+    def evaluated_get(self, _) -> types.Object:  # pyrefly: ignore[bad-return]
       pass
 
     @property
@@ -137,7 +137,7 @@ class types:
   class Context:
 
     @property
-    def scene(self) -> types.Scene:
+    def scene(self) -> types.Scene:  # pyrefly: ignore[bad-return]
       pass
 
   class Light:
