@@ -318,6 +318,7 @@
             <attribute name="solimp" type="array" array_type="float" array_size="5"/>
             <attribute name="margin" type="float"/>
             <attribute name="gap" type="float"/>
+            <attribute name="surfacevel" type="array" array_type="float" array_size="6"/>
             <attribute name="fromto" type="array" array_type="float" array_size="6"/>
             <attribute name="pos" type="array" array_type="float" array_size="3"/>
             <attribute name="quat" type="array" array_type="float" array_size="4"/>
@@ -656,6 +657,7 @@
                 <attribute name="solimp" type="array" array_type="float" array_size="5"/>
                 <attribute name="margin" type="float"/>
                 <attribute name="gap" type="float"/>
+                <attribute name="surfacevel" type="array" array_type="float" array_size="6"/>
                 <attribute name="fromto" type="array" array_type="float" array_size="6"/>
                 <attribute name="pos" type="array" array_type="float" array_size="3"/>
                 <attribute name="quat" type="array" array_type="float" array_size="4"/>
@@ -1098,6 +1100,7 @@
             <attribute name="solimp" type="array" array_type="float" array_size="5"/>
             <attribute name="margin" type="float"/>
             <attribute name="gap" type="float"/>
+            <attribute name="surfacevel" type="array" array_type="float" array_size="6"/>
             <attribute name="fromto" type="array" array_type="float" array_size="6"/>
             <attribute name="pos" type="array" array_type="float" array_size="3"/>
             <attribute name="quat" type="array" array_type="float" array_size="4"/>
@@ -1355,6 +1358,7 @@
                 <attribute name="solimp" type="array" array_type="float" array_size="5"/>
                 <attribute name="margin" type="float"/>
                 <attribute name="gap" type="float"/>
+                <attribute name="surfacevel" type="array" array_type="float" array_size="6"/>
               </attributes>
             </element>
             <element name="site">
@@ -1478,6 +1482,7 @@
                 <attribute name="solimp" type="array" array_type="float" array_size="5"/>
                 <attribute name="margin" type="float"/>
                 <attribute name="gap" type="float"/>
+                <attribute name="surfacevel" type="array" array_type="float" array_size="6"/>
                 <attribute name="fromto" type="array" array_type="float" array_size="6"/>
                 <attribute name="pos" type="array" array_type="float" array_size="3"/>
                 <attribute name="quat" type="array" array_type="float" array_size="4"/>
@@ -1732,6 +1737,7 @@
                     <attribute name="solimp" type="array" array_type="float" array_size="5"/>
                     <attribute name="margin" type="float"/>
                     <attribute name="gap" type="float"/>
+                    <attribute name="surfacevel" type="array" array_type="float" array_size="6"/>
                   </attributes>
                 </element>
                 <element name="site">
