@@ -448,9 +448,11 @@
             <attribute name="armature" type="float"/>
             <attribute name="cranklength" type="float"/>
             <attribute name="user" type="array" array_type="float"/>
+            <attribute name="actdim" type="int"/>
+            <attribute name="input" type="keyword" valid_values="expmap quat"/>
             <attribute name="dyntype" type="keyword" valid_values="none integrator filter filterexact muscle user"/>
-            <attribute name="gaintype" type="keyword" valid_values="fixed affine muscle user"/>
-            <attribute name="biastype" type="keyword" valid_values="none affine muscle user"/>
+            <attribute name="gaintype" type="keyword" valid_values="fixed affine muscle so3 user"/>
+            <attribute name="biastype" type="keyword" valid_values="none affine muscle so3 user"/>
             <attribute name="dynprm" type="array" array_type="float" array_size="10"/>
             <attribute name="gainprm" type="array" array_type="float" array_size="10"/>
             <attribute name="biasprm" type="array" array_type="float" array_size="10"/>
@@ -523,6 +525,19 @@
             <attribute name="kv" type="float"/>
             <attribute name="dampratio" type="float"/>
             <attribute name="inheritrange" type="float"/>
+          </attributes>
+        </element>
+        <element name="orientation">
+          <attributes>
+            <attribute name="group" type="int"/>
+            <attribute name="forcelimited" type="keyword" valid_values="false true auto"/>
+            <attribute name="ctrlrange" type="array" array_type="float" array_size="2"/>
+            <attribute name="forcerange" type="array" array_type="float" array_size="2"/>
+            <attribute name="user" type="array" array_type="float"/>
+            <attribute name="kp" type="float"/>
+            <attribute name="kv" type="float"/>
+            <attribute name="dampratio" type="float"/>
+            <attribute name="input" type="keyword" valid_values="expmap quat"/>
           </attributes>
         </element>
         <element name="damper">
@@ -782,9 +797,10 @@
                 <attribute name="cranklength" type="float"/>
                 <attribute name="user" type="array" array_type="float"/>
                 <attribute name="actdim" type="int"/>
+                <attribute name="input" type="keyword" valid_values="expmap quat"/>
                 <attribute name="dyntype" type="keyword" valid_values="none integrator filter filterexact muscle user"/>
-                <attribute name="gaintype" type="keyword" valid_values="fixed affine muscle user"/>
-                <attribute name="biastype" type="keyword" valid_values="none affine muscle user"/>
+                <attribute name="gaintype" type="keyword" valid_values="fixed affine muscle so3 user"/>
+                <attribute name="biastype" type="keyword" valid_values="none affine muscle so3 user"/>
                 <attribute name="dynprm" type="array" array_type="float" array_size="10"/>
                 <attribute name="gainprm" type="array" array_type="float" array_size="10"/>
                 <attribute name="biasprm" type="array" array_type="float" array_size="10"/>
@@ -853,6 +869,18 @@
                 <attribute name="kv" type="float"/>
                 <attribute name="dampratio" type="float"/>
                 <attribute name="inheritrange" type="float"/>
+              </attributes>
+            </element>
+            <element name="orientation">
+              <attributes>
+                <attribute name="forcelimited" type="keyword" valid_values="false true auto"/>
+                <attribute name="ctrlrange" type="array" array_type="float" array_size="2"/>
+                <attribute name="forcerange" type="array" array_type="float" array_size="2"/>
+                <attribute name="user" type="array" array_type="float"/>
+                <attribute name="kp" type="float"/>
+                <attribute name="kv" type="float"/>
+                <attribute name="dampratio" type="float"/>
+                <attribute name="input" type="keyword" valid_values="expmap quat"/>
               </attributes>
             </element>
             <element name="damper">
@@ -2060,6 +2088,7 @@
             <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
             <attribute name="delay" type="float"/>
             <attribute name="actdim" type="int"/>
+            <attribute name="input" type="keyword" valid_values="expmap quat"/>
             <attribute name="ctrllimited" type="keyword" valid_values="false true auto"/>
             <attribute name="forcelimited" type="keyword" valid_values="false true auto"/>
             <attribute name="actlimited" type="keyword" valid_values="false true auto"/>
@@ -2079,8 +2108,8 @@
             <attribute name="slidersite" type="reference" reference_namespace="site"/>
             <attribute name="user" type="array" array_type="float"/>
             <attribute name="dyntype" type="keyword" valid_values="none integrator filter filterexact muscle user"/>
-            <attribute name="gaintype" type="keyword" valid_values="fixed affine muscle user"/>
-            <attribute name="biastype" type="keyword" valid_values="none affine muscle user"/>
+            <attribute name="gaintype" type="keyword" valid_values="fixed affine muscle so3 user"/>
+            <attribute name="biastype" type="keyword" valid_values="none affine muscle so3 user"/>
             <attribute name="dynprm" type="array" array_type="float" array_size="10"/>
             <attribute name="gainprm" type="array" array_type="float" array_size="10"/>
             <attribute name="biasprm" type="array" array_type="float" array_size="10"/>
@@ -2197,6 +2226,27 @@
             <attribute name="kv" type="float"/>
             <attribute name="dampratio" type="float"/>
             <attribute name="inheritrange" type="float"/>
+          </attributes>
+        </element>
+        <element name="orientation" repeated="true" namespace="actuator">
+          <attributes>
+            <attribute name="name" type="identifier"/>
+            <attribute name="class" type="reference" reference_namespace="default"/>
+            <attribute name="group" type="int"/>
+            <attribute name="nsample" type="int"/>
+            <attribute name="interp" type="keyword" valid_values="zoh linear cubic"/>
+            <attribute name="delay" type="float"/>
+            <attribute name="forcelimited" type="keyword" valid_values="false true auto"/>
+            <attribute name="ctrlrange" type="array" array_type="float" array_size="2"/>
+            <attribute name="forcerange" type="array" array_type="float" array_size="2"/>
+            <attribute name="joint" type="reference"/>
+            <attribute name="site" type="reference"/>
+            <attribute name="refsite" type="reference" reference_namespace="site"/>
+            <attribute name="user" type="array" array_type="float"/>
+            <attribute name="kp" type="float"/>
+            <attribute name="kv" type="float"/>
+            <attribute name="dampratio" type="float"/>
+            <attribute name="input" type="keyword" valid_values="expmap quat"/>
           </attributes>
         </element>
         <element name="damper" repeated="true" namespace="actuator">
